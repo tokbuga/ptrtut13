@@ -150,7 +150,7 @@ Consider the case where we do not know the number of elements in each row at com
                 printf("\nFailure to allocate for row[%d]\n",row);
                 exit(0);
             }
-            printf("\n%d         %p         %d", row, rowptr[row], rowptr[row]);
+            printf("\n%d         %p         %d", row, rowptr[row], *rowptr[row]);
             if (row > 0)
             printf("              %d",(int)(rowptr[row] - rowptr[row-1]));
         }
